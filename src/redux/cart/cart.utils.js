@@ -3,7 +3,6 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {
     cartItem => cartItem.id === cartItemToAdd.id
   );
 
-  //if Cart item does exist, cart item will add 1 on to the value of quantity
   if (existingCartItem) {
     return cartItems.map(cartItem =>
       cartItem.id === cartItemToAdd.id
@@ -12,6 +11,5 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {
     );
   }
 
-  //if Cart item does not exist, cart item will add 1
   return [...cartItems, { ...cartItemToAdd, quantity: 1 }];
 };
