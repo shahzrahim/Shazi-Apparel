@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import ShopActionTypes from "./shop.types";
+=======
+import SHOP_DATA from './shop.data';
+>>>>>>> origin/master
 
 const INITIAL_STATE = {
   collections: null
