@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-import React from 'react'
-
-=======
 import React from 'react';
->>>>>>> origin/master
+
 import StripeCheckout from 'react-stripe-checkout';
 
 const StripeCheckoutButton = ({ price }) => {
